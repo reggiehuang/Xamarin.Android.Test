@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="Caka_App.Caka_App">
+  <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="27" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" android:name="android.app.Application" android:debuggable="true">
+    <activity android:label="@string/app_name" android:theme="@style/AppTheme.NoActionBar" android:name="md5ccbb44cab9fcbca184a6b8f4851bce6b.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="ContentItem" android:name="md5e938e9d3275bd6f37b714d127b06e428.ContentItem" />
+    <activity android:label="LoginActivity" android:name="md5e938e9d3275bd6f37b714d127b06e428.LoginActivity" />
+    <activity android:label="NaviActivity" android:name="md5e938e9d3275bd6f37b714d127b06e428.NaviActivity" />
+    <activity android:label="NewMainActivity" android:name="md5e938e9d3275bd6f37b714d127b06e428.NewMainActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Caka_App.Caka_App.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.Caka_App.Caka_App" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

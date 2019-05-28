@@ -1,0 +1,5 @@
+E:\13_Cacakaka\00_Porject\Caka_App\Caka.TabFlow.Droid\bin\Debug\Caka.TabFlow.Droid.dll
+E:\13_Cacakaka\00_Porject\Caka_App\Caka.TabFlow.Droid\bin\Debug\Caka.TabFlow.Droid.pdb
+E:\13_Cacakaka\00_Porject\Caka_App\Caka.TabFlow.Droid\obj\Debug\Caka.TabFlow.Droid.csproj.CoreCompileInputs.cache
+E:\13_Cacakaka\00_Porject\Caka_App\Caka.TabFlow.Droid\obj\Debug\Caka.TabFlow.Droid.dll
+E:\13_Cacakaka\00_Porject\Caka_App\Caka.TabFlow.Droid\obj\Debug\Caka.TabFlow.Droid.pdb

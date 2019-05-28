@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<api>
+  <package name="com.zhy.view.flowlayout" jni-name="com/zhy/view/flowlayout">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="BuildConfig" static="false" visibility="public" jni-signature="Lcom/zhy/view/flowlayout/BuildConfig;">
+      <constructor deprecated="not deprecated" final="false" name="BuildConfig" jni-signature="()V" bridge="false" static="false" type="com.zhy.view.flowlayout.BuildConfig" synthetic="false" visibility="public"></constructor>
+      <field deprecated="not deprecated" final="true" name="APPLICATION_ID" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.zhy.view.flowlayout&quot;" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="BUILD_TYPE" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="DEBUG" jni-signature="Z" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="FLAVOR" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="VERSION_CODE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="VERSION_NAME" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;1.0&quot;" visibility="public" volatile="false"></field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.view.ViewGroup" extends-generic-aware="android.view.ViewGroup" jni-extends="Landroid/view/ViewGroup;" final="false" name="FlowLayout" static="false" visibility="public" jni-signature="Lcom/zhy/view/flowlayout/FlowLayout;">
+      <constructor deprecated="not deprecated" final="false" name="FlowLayout" jni-signature="(Landroid/content/Context;)V" bridge="false" static="false" type="com.zhy.view.flowlayout.FlowLayout" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="FlowLayout" jni-signature="(Landroid/content/Context;Landroid/util/AttributeSet;)V" bridge="false" static="false" type="com.zhy.view.flowlayout.FlowLayout" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+        <parameter name="attrs" type="android.util.AttributeSet" jni-type="Landroid/util/AttributeSet;"></parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="FlowLayout" jni-signature="(Landroid/content/Context;Landroid/util/AttributeSet;I)V" bridge="false" static="false" type="com.zhy.view.flowlayout.FlowLayout" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+        <parameter name="attrs" type="android.util.AttributeSet" jni-type="Landroid/util/AttributeSet;"></parameter>
+        <parameter name="defStyle" type="int" jni-type="I"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onLayout" jni-signature="(ZIIII)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="protected">
+        <parameter name="changed" type="boolean" jni-type="Z"></parameter>
+        <parameter name="l" type="int" jni-type="I"></parameter>
+        <parameter name="t" type="int" jni-type="I"></parameter>
+        <parameter name="r" type="int" jni-type="I"></parameter>
+        <parameter name="b" type="int" jni-type="I"></parameter>
+      </method>
+      <field deprecated="not deprecated" final="false" name="mAllViews" jni-signature="Ljava/util/List;" static="false" transient="false" type="java.util.List" type-generic-aware="java.util.List&lt;java.util.List&lt;android.view.View&gt;&gt;" visibility="protected" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="mLineHeight" jni-signature="Ljava/util/List;" static="false" transient="false" type="java.util.List" type-generic-aware="java.util.List&lt;java.lang.Integer&gt;" visibility="protected" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="mLineWidth" jni-signature="Ljava/util/List;" static="false" transient="false" type="java.util.List" type-generic-aware="java.util.List&lt;java.lang.Integer&gt;" visibility="protected" volatile="false"></field>
+    </class>
+    <class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="TagAdapter" static="false" visibility="public" jni-signature="Lcom/zhy/view/flowlayout/TagAdapter;">
+      <typeParameters>
+        <typeParameter name="T" classBound="java.lang.Object" jni-classBound="Ljava/lang/Object;"></typeParameter>
+      </typeParameters>
+      <constructor deprecated="not deprecated" final="false" name="TagAdapter" jni-signature="(Ljava/util/List;)V" bridge="false" static="false" type="com.zhy.view.flowlayout.TagAdapter" synthetic="false" visibility="public">
+        <parameter name="datas" type="java.util.List&lt;T&gt;" jni-type="Ljava/util/List&lt;TT;&gt;;"></parameter>
+      </constructor>
+      <constructor deprecated="deprecated" final="false" name="TagAdapter" jni-signature="([Ljava/lang/Object;)V" bridge="false" static="false" type="com.zhy.view.flowlayout.TagAdapter" synthetic="false" visibility="public">
+        <parameter name="datas" type="T[]" jni-type="[TT;"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getCount" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getItem" jni-signature="(I)Ljava/lang/Object;" bridge="false" native="false" return="T" jni-return="TT;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getView" jni-signature="(Lcom/zhy/view/flowlayout/FlowLayout;ILjava/lang/Object;)Landroid/view/View;" bridge="false" native="false" return="android.view.View" jni-return="Landroid/view/View;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="com.zhy.view.flowlayout.FlowLayout" jni-type="Lcom/zhy/view/flowlayout/FlowLayout;"></parameter>
+        <parameter name="p1" type="int" jni-type="I"></parameter>
+        <parameter name="p2" type="T" jni-type="TT;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="notifyDataChanged" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onSelected" jni-signature="(ILandroid/view/View;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I"></parameter>
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSelected" jni-signature="(ILjava/lang/Object;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I"></parameter>
+        <parameter name="t" type="T" jni-type="TT;"></parameter>
+      </method>
+      <method abstract="false" deprecated="deprecated" final="false" name="setSelectedList" jni-signature="([I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="poses" type="int..." jni-type="[I"></parameter>
+      </method>
+      <method abstract="false" deprecated="deprecated" final="false" name="setSelectedList" jni-signature="(Ljava/util/Set;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="set" type="java.util.Set&lt;java.lang.Integer&gt;" jni-type="Ljava/util/Set&lt;Ljava/lang/Integer;&gt;;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="unSelected" jni-signature="(ILandroid/view/View;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="position" type="int" jni-type="I"></parameter>
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;"></parameter>
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="TagAdapter.OnDataChangedListener" static="true" visibility="" jni-signature="Lcom/zhy/view/flowlayout/TagAdapter$OnDataChangedListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onChanged" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="com.zhy.view.flowlayout.FlowLayout" extends-generic-aware="com.zhy.view.flowlayout.FlowLayout" jni-extends="Lcom/zhy/view/flowlayout/FlowLayout;" final="false" name="TagFlowLayout" static="false" visibility="public" jni-signature="Lcom/zhy/view/flowlayout/TagFlowLayout;">
+      <implements name="com.zhy.view.flowlayout.TagAdapter.OnDataChangedListener" name-generic-aware="com.zhy.view.flowlayout.TagAdapter.OnDataChangedListener" jni-type="Lcom/zhy/view/flowlayout/TagAdapter$OnDataChangedListener;"></implements>
+      <constructor deprecated="not deprecated" final="false" name="TagFlowLayout" jni-signature="(Landroid/content/Context;)V" bridge="false" static="false" type="com.zhy.view.flowlayout.TagFlowLayout" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="TagFlowLayout" jni-signature="(Landroid/content/Context;Landroid/util/AttributeSet;)V" bridge="false" static="false" type="com.zhy.view.flowlayout.TagFlowLayout" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+        <parameter name="attrs" type="android.util.AttributeSet" jni-type="Landroid/util/AttributeSet;"></parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="TagFlowLayout" jni-signature="(Landroid/content/Context;Landroid/util/AttributeSet;I)V" bridge="false" static="false" type="com.zhy.view.flowlayout.TagFlowLayout" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+        <parameter name="attrs" type="android.util.AttributeSet" jni-type="Landroid/util/AttributeSet;"></parameter>
+        <parameter name="defStyle" type="int" jni-type="I"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="dip2px" jni-signature="(Landroid/content/Context;F)I" bridge="false" native="false" return="int" jni-return="I" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+        <parameter name="dpValue" type="float" jni-type="F"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAdapter" jni-signature="()Lcom/zhy/view/flowlayout/TagAdapter;" bridge="false" native="false" return="com.zhy.view.flowlayout.TagAdapter" jni-return="Lcom/zhy/view/flowlayout/TagAdapter;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getSelectedList" jni-signature="()Ljava/util/Set;" bridge="false" native="false" return="java.util.Set&lt;java.lang.Integer&gt;" jni-return="Ljava/util/Set&lt;Ljava/lang/Integer;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onChanged" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setAdapter" jni-signature="(Lcom/zhy/view/flowlayout/TagAdapter;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="adapter" type="com.zhy.view.flowlayout.TagAdapter" jni-type="Lcom/zhy/view/flowlayout/TagAdapter;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setMaxSelectCount" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="count" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnSelectListener" jni-signature="(Lcom/zhy/view/flowlayout/TagFlowLayout$OnSelectListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="onSelectListener" type="com.zhy.view.flowlayout.TagFlowLayout.OnSelectListener" jni-type="Lcom/zhy/view/flowlayout/TagFlowLayout$OnSelectListener;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOnTagClickListener" jni-signature="(Lcom/zhy/view/flowlayout/TagFlowLayout$OnTagClickListener;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="onTagClickListener" type="com.zhy.view.flowlayout.TagFlowLayout.OnTagClickListener" jni-type="Lcom/zhy/view/flowlayout/TagFlowLayout$OnTagClickListener;"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="TagFlowLayout.1" static="false" visibility="" jni-signature="Lcom/zhy/view/flowlayout/TagFlowLayout$1;">
+      <implements name="android.view.View.OnClickListener" name-generic-aware="android.view.View.OnClickListener" jni-type="Landroid/view/View$OnClickListener;"></implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onClick" jni-signature="(Landroid/view/View;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="v" type="android.view.View" jni-type="Landroid/view/View;"></parameter>
+      </method>
+    </class>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="TagFlowLayout.OnSelectListener" static="true" visibility="public" jni-signature="Lcom/zhy/view/flowlayout/TagFlowLayout$OnSelectListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onSelected" jni-signature="(Ljava/util/Set;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="java.util.Set&lt;java.lang.Integer&gt;" jni-type="Ljava/util/Set&lt;Ljava/lang/Integer;&gt;;"></parameter>
+      </method>
+    </interface>
+    <interface abstract="true" deprecated="not deprecated" final="false" name="TagFlowLayout.OnTagClickListener" static="true" visibility="public" jni-signature="Lcom/zhy/view/flowlayout/TagFlowLayout$OnTagClickListener;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="onTagClick" jni-signature="(Landroid/view/View;ILcom/zhy/view/flowlayout/FlowLayout;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="android.view.View" jni-type="Landroid/view/View;"></parameter>
+        <parameter name="p1" type="int" jni-type="I"></parameter>
+        <parameter name="p2" type="com.zhy.view.flowlayout.FlowLayout" jni-type="Lcom/zhy/view/flowlayout/FlowLayout;"></parameter>
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="android.widget.FrameLayout" extends-generic-aware="android.widget.FrameLayout" jni-extends="Landroid/widget/FrameLayout;" final="false" name="TagView" static="false" visibility="public" jni-signature="Lcom/zhy/view/flowlayout/TagView;">
+      <implements name="android.widget.Checkable" name-generic-aware="android.widget.Checkable" jni-type="Landroid/widget/Checkable;"></implements>
+      <constructor deprecated="not deprecated" final="false" name="TagView" jni-signature="(Landroid/content/Context;)V" bridge="false" static="false" type="com.zhy.view.flowlayout.TagView" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getTagView" jni-signature="()Landroid/view/View;" bridge="false" native="false" return="android.view.View" jni-return="Landroid/view/View;" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isChecked" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onCreateDrawableState" jni-signature="(I)[I" bridge="false" native="false" return="int[]" jni-return="[I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="extraSpace" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setChecked" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="checked" type="boolean" jni-type="Z"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="toggle" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+    </class>
+  </package>
+</api>
